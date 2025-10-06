@@ -1,0 +1,46 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-01-20 06:35:32.581910",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "staff_smp_greeting",
+  "receipt_quote_of_the_day"
+ ],
+ "fields": [
+  {
+   "fieldname": "staff_smp_greeting",
+   "fieldtype": "Long Text",
+   "label": "Staff SMP Greeting"
+  },
+  {
+   "fieldname": "receipt_quote_of_the_day",
+   "fieldtype": "Small Text",
+   "label": "Receipt Quote of The Day"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2025-01-20 06:36:46.862071",
+ "modified_by": "Administrator",
+ "module": "Real Estate",
+ "name": "View Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,57 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-03-04 05:25:25.095757",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "default_warehouse",
+  "default_plot_item",
+  "default_land_item"
+ ],
+ "fields": [
+  {
+   "fieldname": "default_warehouse",
+   "fieldtype": "Link",
+   "label": "Default Warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "default_plot_item",
+   "fieldtype": "Link",
+   "label": "Default Plot Item",
+   "options": "Item"
+  },
+  {
+   "fieldname": "default_land_item",
+   "fieldtype": "Link",
+   "label": "Default Land Item",
+   "options": "Item"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2024-03-04 05:25:25.095757",
+ "modified_by": "Administrator",
+ "module": "Real Estate",
+ "name": "Real Estate Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

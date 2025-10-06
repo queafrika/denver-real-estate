@@ -1,0 +1,139 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:plot",
+ "creation": "2024-03-03 18:28:09.798793",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "plot",
+  "number",
+  "status",
+  "column_break_rihiu",
+  "size",
+  "title",
+  "pricing_details_section",
+  "cash_price",
+  "column_break_pyisz",
+  "installment_price",
+  "ownership_details_section",
+  "date_owned",
+  "customer",
+  "offer",
+  "column_break_nt8d9",
+  "sales_rep",
+  "sale"
+ ],
+ "fields": [
+  {
+   "fieldname": "plot",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Plot",
+   "options": "Serial No",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Plot Number"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "VACANT\nON HOLD\nBOOKED\nUNDER PAYMENT\nPAID\nTRANSFERRED"
+  },
+  {
+   "fieldname": "column_break_rihiu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "size",
+   "fieldtype": "Data",
+   "label": "Plot Size"
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Title No."
+  },
+  {
+   "fieldname": "cash_price",
+   "fieldtype": "Data",
+   "label": "Cash Price"
+  },
+  {
+   "fieldname": "installment_price",
+   "fieldtype": "Data",
+   "label": "Installment Price"
+  },
+  {
+   "fieldname": "offer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Sale",
+   "options": "Sales Order"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Customer Owner",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "sales_rep",
+   "fieldtype": "Link",
+   "label": "Sales Representantive",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "sale",
+   "fieldtype": "Link",
+   "label": "Invoice",
+   "options": "Sales Invoice"
+  },
+  {
+   "fieldname": "date_owned",
+   "fieldtype": "Date",
+   "label": "Date Owned"
+  },
+  {
+   "fieldname": "pricing_details_section",
+   "fieldtype": "Section Break",
+   "label": "Pricing Details"
+  },
+  {
+   "fieldname": "column_break_pyisz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ownership_details_section",
+   "fieldtype": "Section Break",
+   "label": "Ownership Details"
+  },
+  {
+   "fieldname": "column_break_nt8d9",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-03-04 05:15:37.934053",
+ "modified_by": "Administrator",
+ "module": "Real Estate",
+ "name": "Project Plot Detail",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

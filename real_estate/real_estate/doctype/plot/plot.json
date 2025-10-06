@@ -1,0 +1,166 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "format:{project}-{number}",
+ "creation": "2023-02-08 11:38:58.881248",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "number",
+  "project",
+  "title",
+  "column_break_3",
+  "size",
+  "status",
+  "pricing_section",
+  "currency",
+  "cash_price",
+  "column_break_10",
+  "installment_price",
+  "owner_info_section",
+  "customer",
+  "date_owned",
+  "sales_rep",
+  "column_break_12",
+  "offer",
+  "sale"
+ ],
+ "fields": [
+  {
+   "fieldname": "number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Project",
+   "options": "Project"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "size",
+   "fieldtype": "Data",
+   "label": "Plot Size"
+  },
+  {
+   "default": "VACANT",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "VACANT\nON HOLD\nBOOKED\nUNDER PAYMENT\nPAID\nTRANSFERRED",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "pricing_section",
+   "fieldtype": "Section Break",
+   "label": "Pricing"
+  },
+  {
+   "fieldname": "currency",
+   "fieldtype": "Link",
+   "label": "Currency",
+   "options": "Currency",
+   "reqd": 1
+  },
+  {
+   "fieldname": "cash_price",
+   "fieldtype": "Currency",
+   "label": "Cash Price",
+   "options": "currency",
+   "reqd": 1
+  },
+  {
+   "fieldname": "owner_info_section",
+   "fieldtype": "Section Break",
+   "label": "Owner Info",
+   "read_only": 1
+  },
+  {
+   "fieldname": "date_owned",
+   "fieldtype": "Date",
+   "label": "Date Owned",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "offer",
+   "fieldtype": "Link",
+   "label": "Offer",
+   "options": "Sales Order",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sale",
+   "fieldtype": "Link",
+   "label": "Sale",
+   "options": "Sales Invoice",
+   "read_only": 1
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer Owner",
+   "options": "Customer",
+   "read_only": 1
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "label": "Title No."
+  },
+  {
+   "fieldname": "installment_price",
+   "fieldtype": "Currency",
+   "label": "Installment Price"
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sales_rep",
+   "fieldtype": "Link",
+   "label": "Sales Represenatative",
+   "options": "Employee"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-11-09 12:57:42.639302",
+ "modified_by": "Administrator",
+ "module": "Real Estate",
+ "name": "Plot",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,149 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:identifier",
+ "creation": "2023-02-08 11:01:00.098573",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "identifier",
+  "location",
+  "launch_date",
+  "column_break_4",
+  "number",
+  "start_date",
+  "status",
+  "project_details_section",
+  "banner_image",
+  "short_description",
+  "description",
+  "accounting_tab",
+  "stock_account",
+  "income_account",
+  "column_break_lxmvw",
+  "cos_account"
+ ],
+ "fields": [
+  {
+   "fieldname": "identifier",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location",
+   "reqd": 1
+  },
+  {
+   "fieldname": "launch_date",
+   "fieldtype": "Date",
+   "label": "Launch Date"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "number",
+   "fieldtype": "Data",
+   "label": "Title Number",
+   "reqd": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "label": "Start Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Link",
+   "label": "Status",
+   "options": "Real Estate Project Status"
+  },
+  {
+   "fieldname": "project_details_section",
+   "fieldtype": "Tab Break",
+   "label": "Project Details"
+  },
+  {
+   "fieldname": "banner_image",
+   "fieldtype": "Attach Image",
+   "label": "Banner Image"
+  },
+  {
+   "fieldname": "short_description",
+   "fieldtype": "Small Text",
+   "label": "Short Description"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "label": "Description"
+  },
+  {
+   "fieldname": "accounting_tab",
+   "fieldtype": "Tab Break",
+   "label": "Accounting Setting"
+  },
+  {
+   "fieldname": "stock_account",
+   "fieldtype": "Link",
+   "label": "Default Stock Asset Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "income_account",
+   "fieldtype": "Link",
+   "label": "Default Sales Income Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "column_break_lxmvw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cos_account",
+   "fieldtype": "Link",
+   "label": "Default Cost of Goods Account",
+   "options": "Account"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [
+  {
+   "group": "Plots",
+   "link_doctype": "Plot",
+   "link_fieldname": "project"
+  }
+ ],
+ "modified": "2023-08-07 03:54:34.342567",
+ "modified_by": "Administrator",
+ "module": "Real Estate",
+ "name": "Real Estate Project",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

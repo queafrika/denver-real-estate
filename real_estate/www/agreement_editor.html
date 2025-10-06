@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="csrf-token" content="{{ frappe.session.csrf_token }}">
+ 
+  {% raw %}
+  <title>Agreement Editor</title>
+  <!-- Link to Angular styles (adjust the path as necessary) -->
+  <link rel="stylesheet" href="/assets/angular_integration/angular-app/styles.css">
+</head>
+<body style="min-width: 80vw !important; max-width: 80vw !important; height: auto">
+  <!-- Angular app root -->
+  <app-root></app-root>
+  <!-- Include Angular build files -->
+  <script src="/assets/real_estate/assets/js/runtime-agreement-editor.js" defer></script>
+  <script src="/assets/real_estate/assets/js/polyfills-agreement-editor.js" defer></script>
+  <script src="/assets/real_estate/assets/js/main-agreement-editor.js" defer></script>
+
+</body>
+</html>
+{% endraw %}

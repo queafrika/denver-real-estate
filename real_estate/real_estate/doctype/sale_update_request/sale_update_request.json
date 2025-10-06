@@ -1,0 +1,153 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{source}-{type}",
+ "creation": "2023-09-24 10:11:52.235000",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "source",
+  "request_date",
+  "status",
+  "refund_payments",
+  "column_break_yscaw",
+  "output",
+  "type",
+  "cancel_details_section",
+  "cancel_reason",
+  "cancel_description",
+  "transfer_details_section",
+  "to_project",
+  "column_break_6gbvf",
+  "to_plot",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "source",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Source Sale",
+   "options": "Sales Order",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "output",
+   "fieldtype": "Link",
+   "label": "Output Sale",
+   "options": "Sales Order",
+   "read_only": 1
+  },
+  {
+   "default": "Pending",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Pending\nRejected\nApproved",
+   "reqd": 1
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "label": "Request Type",
+   "options": "Plot Transfer\nSale Cancel"
+  },
+  {
+   "depends_on": "eval: doc.type == \"Sale Cancel\"",
+   "fieldname": "cancel_reason",
+   "fieldtype": "Link",
+   "label": "Cancel Reason",
+   "mandatory_depends_on": "eval: doc.type == \"Sale Cancel\"",
+   "options": "Sale Cancel Reason"
+  },
+  {
+   "depends_on": "eval: doc.type == \"Sale Cancel\"",
+   "fieldname": "cancel_description",
+   "fieldtype": "Long Text",
+   "label": "Cancel Description"
+  },
+  {
+   "default": "Today",
+   "fieldname": "request_date",
+   "fieldtype": "Date",
+   "label": "Request Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_yscaw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cancel_details_section",
+   "fieldtype": "Section Break",
+   "label": "Cancel Details"
+  },
+  {
+   "fieldname": "transfer_details_section",
+   "fieldtype": "Section Break",
+   "label": "Transfer Details"
+  },
+  {
+   "fieldname": "to_project",
+   "fieldtype": "Link",
+   "label": "To Project",
+   "options": "Project"
+  },
+  {
+   "fieldname": "column_break_6gbvf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "to_plot",
+   "fieldtype": "Link",
+   "label": "To Plot",
+   "options": "Serial No"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Sale Update Request",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "refund_payments",
+   "fieldtype": "Check",
+   "label": "Refund Payments"
+  }
+ ],
+ "in_create": 1,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-03-04 07:15:39.486875",
+ "modified_by": "Administrator",
+ "module": "Real Estate",
+ "name": "Sale Update Request",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
