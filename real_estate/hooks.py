@@ -1,7 +1,7 @@
 from . import __version__ as app_version
 
-app_name = "real_estate"
-app_title = "Real Estate"
+app_name = "denver_real_estate"
+app_title = "Denver Real Estate"
 app_publisher = "Finesoft"
 app_description = "Real Estate Sales"
 app_email = "finesoftafrika@gmail.com"
